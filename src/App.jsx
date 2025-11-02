@@ -1,19 +1,36 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+
 import './App.css'
+import { Navbar } from './components/Navbar.jsx';
+import { Home } from './Pages/Home.jsx';
+import { Certifications } from './Pages/Certifications.jsx';
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
     <>
-    <routes>
 
-    
-    </routes>
+      <Router>
+        <Navbar />
+         <Routes>
+          <Route path="/" element={<Home />} />
+         
+          <Route path="/certification" element={<Certifications/>} />
+        </Routes>
+        
+      
+        
+      </Router>
+
+
 
     </>
+
+
+
+
   )
 }
 
