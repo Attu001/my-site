@@ -1,14 +1,14 @@
 import React from 'react'
-import  Navbar  from '../components/Navbar'
+import Navbar from '../components/Navbar'
 
 export const Home = () => {
     return (
         <>
-        
-            <div className='bg-gradient-to-br from-blue-900 via-purple-900 to-pink-800 w-screen h-screen flex justify-center items-center p-4 relative overflow-hidden'>
-               
-                 <Navbar/>
-               
+
+            <div className='bg-gradient-to-br from-blue-900 via-purple-900 to-pink-800 w-screen h-screen flex justify-center items-center p-4 relative overflow-auto'>
+
+                <Navbar />
+
                 {/* Animated gradient orbs */}
                 <div className='absolute inset-0 overflow-hidden'>
                     <div className='absolute -top-20 -left-20 w-96 h-96 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-60 animate-float-slow'></div>
@@ -16,6 +16,7 @@ export const Home = () => {
                     <div className='absolute top-1/3 right-1/4 w-80 h-80 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full mix-blend-multiply filter blur-3xl opacity-40 animate-float-fast'></div>
                     <div className='absolute bottom-1/3 left-1/4 w-64 h-64 bg-gradient-to-r from-green-400 to-teal-500 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-float-slow'></div>
                 </div>
+
 
                 {/* Animated grid */}
                 <div className='absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.1)_1px,transparent_1px)] bg-[size:60px_60px] [mask-image:radial-gradient(ellipse_80%_80%_at_50%_50%,black,transparent)] animate-grid-move'></div>
@@ -35,7 +36,7 @@ export const Home = () => {
                         />
                     ))}
                 </div>
-                    
+
                 {/* Floating shapes */}
                 <div className='absolute inset-0'>
                     {[...Array(8)].map((_, i) => (
@@ -54,21 +55,31 @@ export const Home = () => {
                     ))}
                 </div>
 
-                <div className='flex-col justify-center gap-6 lg:w-[800px] py-8 z-10 relative'>
-                    <div className='py-4 space-y-4'>
+
+                <div className='sm:flex items-center justify-center  gap-6 mt-38  py-6 z-20  relative'>
+                    <div className="lg:w-1/2 animate-fade-in-up animation-delay-300 flex justify-end ">
+                        <img
+                            src="https://srbpwyxjbrbxzlerdust.supabase.co/storage/v1/object/public/portfolio-images/3Dmodels/cwok_casual_19-removebg-preview.png"
+                            className='animate-[float_1.5s_ease-in-out_infinite]'
+                            alt="no"
+                        />
+                    </div>
+                    <div className=''> 
+                        
+                   <div className='py-4 space-y-4'>
                         <div className='overflow-hidden'>
-                            <h6 className='text-cyan-300 font-light text-xl mb-2 opacity-0 animate-fade-in-up animation-delay-300 tracking-wider'> 
-                                👋 Hi, I am 
+                            <h6 className='text-cyan-300 font-light text-xl mb-2 opacity-0 animate-fade-in-up animation-delay-300 tracking-wider'>
+                                👋 Hi, I am
                             </h6>
                         </div>
-                        
+
                         <div className='over'>
                             <h1 className='text-7xl lg:text-8xl font-bold bg-gradient-to-r from-white via-cyan-200 to-purple-200 bg-clip-text text-transparent opacity-0 animate-fade-in-up animation-delay-500 hover:scale-105 transition-transform duration-300 '>
                                 Atish Chavan
                             </h1>
                         </div>
-                        
-                        <div className='overflow-hidden'>
+
+                        <div className='overflow-hidde'>
                             <h3 className='text-3xl lg:text-4xl text-white font-medium mt-6 opacity-0 animate-fade-in-up animation-delay-700'>
                                 I <span className='text-yellow-400'>build</span>{' '}
                                 <span className='text-cyan-400 relative inline-block'>
@@ -79,39 +90,13 @@ export const Home = () => {
                         </div>
                     </div>
 
-                    <div className='overflow-hidden'>
+                    <div className=''>
                         <h6 className='py-8 text-white/90 text-xl leading-relaxed backdrop-blur-sm bg-white/5 rounded-2xl p-6 border border-white/10 opacity-0 animate-fade-in-up animation-delay-900 hover:bg-white/10 transition-all duration-300'>
                             💻 Hi, I'm a passionate Full Stack Developer specializing in building scalable web applications using React, Node.js, Django, and modern cloud technologies. I love turning complex problems into simple, elegant solutions.
                         </h6>
                     </div>
 
-                    {/* <div className='overflow-hidden pt-4 flex gap-4'>
-                        <button className='group relative px-10 py-5 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-xl text-white font-semibold text-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/40 opacity-0 animate-fade-in-up animation-delay-1100'>
-                            <span className='relative z-10 flex items-center gap-2'>
-                                🚀 Check out my projects
-                            </span>
-                            <div className='absolute inset-0 bg-gradient-to-r from-purple-500 to-cyan-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left'></div>
-                        </button>
 
-                        <button className='group relative px-8 py-5 bg-transparent border-2 border-white/30 rounded-xl text-white font-semibold text-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:border-white/60 hover:bg-white/10 opacity-0 animate-fade-in-up animation-delay-1200'>
-                            <span className='relative z-10 flex items-center gap-2'>
-                                📧 Get in touch
-                            </span>
-                        </button>
-                    </div> */}
-
-                    {/* Social links
-                    <div className='flex gap-6 pt-8 opacity-0 animate-fade-in-up animation-delay-1400'>
-                        {['github', 'linkedin', 'twitter', 'portfolio'].map((platform, index) => (
-                            <div
-                                key={platform}
-                                className='w-12 h-12 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center border border-white/20 hover:bg-white/20 hover:scale-110 hover:border-cyan-400 transition-all duration-300 cursor-pointer'
-                                style={{ animationDelay: `${1400 + index * 100}ms` }}
-                            >
-                                <span className='text-white'>🔗</span>
-                            </div>
-                        ))}
-                    </div> */}
 
                     {/* Scroll indicator */}
                     <div className='absolute -bottom-20 left-1/2 transform -translate-x-1/2 opacity-0 animate-fade-in animation-delay-2000'>
@@ -123,6 +108,8 @@ export const Home = () => {
                         </div>
                     </div>
                 </div>
+                </div>
+
             </div>
 
             <style jsx>{`
