@@ -7,7 +7,7 @@ export const Home = () => {
 
             <div className='bg-gradient-to-br from-blue-900 via-purple-900 to-pink-800 w-screen h-screen flex justify-center items-center p-4 relative overflow-auto'>
 
-                <Navbar />
+                {/* <Navbar /> */}
 
                 {/* Animated gradient orbs */}
                 <div className='absolute inset-0 overflow-hidden'>
