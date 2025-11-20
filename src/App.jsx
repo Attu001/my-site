@@ -17,10 +17,11 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
+          
           <Route path="/" element={<Home />} />
           <Route path='/contact' element={<Contact />} />
           <Route path="/certification" element={<Certifications />} />
-          <Route path="/project" element={<Projects/>}/>
+          <Route path="/project" element={<Projects />} />
         </Routes>
       </Router>
 
